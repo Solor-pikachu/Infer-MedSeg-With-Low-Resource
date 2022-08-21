@@ -7,6 +7,7 @@ In our code, you need to prepare for tree dataset for our training dataset
 For Training
 1.install nnUNet-master-ori. Using a first dataset for training to get the first model, and then using this model infers on 2000 unlabeled data to get the segmentation.
 
+`<
 cd nnUNet-master-ori
 pip install -e.
 nnUNet_plan_and_preprocess -t 777 -pl2d None
@@ -17,6 +18,7 @@ cp -r ./data/Unlabel/images ./data/Task888/imagesTr
 #for label data
 cp -r ./data/Label/labels ./data/Task888/labelsTr
 cp -r ./data/Label/images ./data/Task888/imagesTr
+>`
 
 2.install nnUNet-master-data-ssl. Perform data preprocessing on 50 label data and 2000 Unlabel data, and then train the semi-supervised model by the second dataset. Train config file(including space, Network Architecture, etc.) is in experiment_planning/experiment_planner_baseline_3DUNet, and the algorithm about semi-supervised and data split plan in training/network_training/nnUNetTrainerV2 file. 
 
