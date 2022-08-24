@@ -14,12 +14,12 @@ nnUNet_plan_and_preprocess -t 777 -pl2d None
 nnUNet_train 3d_lowres nnUNetTrainerV2 777 0
 ```
 
-#for unlabeled data
+For unlabeled data
 ```python
 nnUNet_predict -i ./data/Unlabel/images -o data/Task888/labelsTr
 cp -r ./data/Unlabel/images ./data/Task888/imagesTr
 ```
-#for label data
+For labeled data
 ```python
 cp -r ./data/Label/labels ./data/Task888/labelsTr
 cp -r ./data/Label/images ./data/Task888/imagesTr
