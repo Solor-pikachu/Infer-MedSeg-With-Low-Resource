@@ -4,8 +4,8 @@ In our code, you need to prepare for tree dataset for our training dataset
 1.2 a dataset that consists of 50 labeled data and unlabeled data(After Crop in the abdomen) stored in Task888_FLARESSL
 1.3 a dataset that consists of 50 labeled data stores in Task666_FineFinetune(After Cropping in the abdomen)
 
-=For Training
-==1.install nnUNet-master-ori. Using the first dataset for training to get the first model, and then using this model infers on 2000 unlabeled data to get the segmentation.
+#For Training
+##1.install nnUNet-master-ori. Using the first dataset for training to get the first model, and then using this model infers on 2000 unlabeled data to get the segmentation.
 
 ```python
 cd nnUNet-master-ori
