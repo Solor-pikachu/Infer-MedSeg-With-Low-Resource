@@ -52,7 +52,7 @@ python crop_img2.py
 nnUNet_plan_and_preprocess -t 666 -pl2d None
 nnUNet_train 3d_lowres nnUNetTrainerV2 666 0 -pretrained_weights nnUNet_trained_models/nnUNet/3d_fullres/Task777_CoarseFinetune/nnUNetTrainerV2__nnUNetPlansv2.1/fold_0/model_final_checkpoint.model
 ```
-####Important####
+####Important####  
 3. For Inference  
 How to infer in our new engine for your new model  
 3.1 We develop a new accelerated architecture about coarse to fine segmentation which designs for nnUNet inference.  
